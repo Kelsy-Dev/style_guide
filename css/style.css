@@ -420,6 +420,9 @@ a {
   border-radius: 5px;
 }
 
+/*The $col variables aren't working although
+ they are well compiled in css line 423 and
+written in _variables line 15  */
 .theme.col-1 {
   background-color: $col-1;
 }
