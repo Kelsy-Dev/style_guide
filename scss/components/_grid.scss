@@ -1,0 +1,27 @@
+.container {
+    padding: 0 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  @for $theme from 1 through 12 {
+    .theme.col-#{$theme} {
+       background-color: adjust-hue(#927bc1, $theme * 50);
+    }
+  }
+  
+  .card {
+    flex-basis: 100%;
+  }
