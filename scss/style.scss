@@ -8,12 +8,14 @@
 
 //---------Loops--------------------
 
-
+@function per-col ($basis: 8.33%) {
+    @return  ($basis * 2);
+}
 
 @include mq {
-    // @for $columns from 1 through 12 {
-    //     .col-#{$columns} {
-    //         flex-basis: initial;
-    //     }
-    // }
-}
+     @for $columns from 1 through 12 {
+         .col-#{$columns} {
+             flex-basis: per-col(2);
+            }
+        }
+    }

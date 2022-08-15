@@ -13,7 +13,7 @@
   .default {
     background-color: #51ddfc;
     &:hover {
-      background-color: lighten($color: #51ddfc, $amount: 15%);
+      background-color: lighten(white, 15%);  // fix this
     }
   }
   

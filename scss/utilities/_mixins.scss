@@ -1,19 +1,24 @@
+@mixin disp-block ($mt:optional, $w:optional)
+        {
+        margin-top: $mt;
+        max-width: $w;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
 @mixin mq {
     @media (min-width: 768px) {
 
         @content;
-        
+
         .container {
           max-width: 1400px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
         }
         
-        .centered {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
+        .centered, .container {
+         @include disp-block;
         }
         
         .row {
@@ -61,3 +66,5 @@
           
 }
 }
+
+
