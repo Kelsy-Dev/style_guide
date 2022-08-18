@@ -5,7 +5,7 @@
   .row {
     display: flex;
     flex-direction: column;
-    padding: 1em 10px;
+    padding: 1em 10px
   }
   
   [class^=col] {
@@ -16,18 +16,20 @@
     border-radius: 5px;
   }
 
-/*The $col variables aren't working although
+/*The $col variables aren't working when using @each loop although
  they are well compiled in css line 423 and
 written in _variables line 15  */  
 
-  $bckgrnd-colors: ('col-1', 'col-2', 'col-3', 'col-4', 'col-5', 'col-6', 'col-7', 'col-8', 'col-12');
-  $clrs: ('$col-1', '$col-2', '$col-3', '$col-4', '$col-5', '$col-6', '$col-7', '$col-8', '$col-12');
+  
+  $clrs: ('#fd7856', '#927bc1', '#deb2ee', '#7ee6fd', '#88d9a0', '#4da2bb', '#ec9fa3', '#fd9f85', '#80e8d1');
 
-  @each $bckgrnd, $colors in zip($bckgrnd-colors, $clrs) {
+  @each $bckgrnd, $mycolors in zip($bckgrnd-colors, $clrs) {
     .theme.#{$bckgrnd} {
-      background-color: #{$colors};
+      background-color: #{$mycolors};
     }
    }
+
+  
   
   .card {
     flex-basis: 100%;

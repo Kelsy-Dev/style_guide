@@ -1,4 +1,4 @@
-@import 'base/index', 'components/index', 'utilities/index', 'images/index';
+@import 'utilities/index', 'base/index', 'components/index', 'images/index';
 
 // ---------Function---------------
 
@@ -12,5 +12,5 @@
 //     @return  ($basis * 2);
 // }
 
-@include mq ();
+
 

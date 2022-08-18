@@ -356,28 +356,28 @@ a {
   transition-property: background-color;
   transition-duration: 1s;
 }
-
-.default {
-  background-color: #51ddfc;
-}
-.default:hover {
+.btn:hover {
   background-color: white;
 }
 
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
+.default {
+  background-color: #51ddfc;
 }
 
 .success {
   background-color: #63cc82;
 }
 
+.error {
+  background-color: #e4757a;
+}
+
 .warning {
   background-color: #fd7856;
+}
+
+.info {
+  background-color: #927bc1;
 }
 
 .form {
@@ -420,43 +420,43 @@ a {
   border-radius: 5px;
 }
 
-/*The $col variables aren't working although
+/*The $col variables aren't working when using @each loop although
  they are well compiled in css line 423 and
 written in _variables line 15  */
 .theme.col-1 {
-  background-color: $col-1;
+  background-color: #fd7856;
 }
 
 .theme.col-2 {
-  background-color: $col-2;
+  background-color: #927bc1;
 }
 
 .theme.col-3 {
-  background-color: $col-3;
+  background-color: #deb2ee;
 }
 
 .theme.col-4 {
-  background-color: $col-4;
+  background-color: #7ee6fd;
 }
 
 .theme.col-5 {
-  background-color: $col-5;
+  background-color: #88d9a0;
 }
 
 .theme.col-6 {
-  background-color: $col-6;
+  background-color: #4da2bb;
 }
 
 .theme.col-7 {
-  background-color: $col-7;
+  background-color: #ec9fa3;
 }
 
 .theme.col-8 {
-  background-color: $col-8;
+  background-color: #fd9f85;
 }
 
 .theme.col-12 {
-  background-color: $col-12;
+  background-color: #80e8d1;
 }
 
 .card {
@@ -482,35 +482,11 @@ written in _variables line 15  */
   background-color: #58e1c1;
 }
 
-.img-avatar, .img-frame {
-  margin-top: 10px;
-  max-width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.img-avatar {
-  max-height: 100%;
-}
-.img-frame {
-  padding: 13px;
-  border: 1px solid #ccc;
-}
-.img-logo {
-  margin-top: optional;
-  max-width: optional;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 1400px;
   }
   .centered, .container {
-    margin-top: optional;
-    max-width: optional;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -545,6 +521,25 @@ written in _variables line 15  */
     margin-left: initial;
     margin-right: initial;
   }
+}
+.img-avatar, .img-frame {
+  margin-top: 10px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-avatar {
+  max-height: 100%;
+}
+.img-frame {
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

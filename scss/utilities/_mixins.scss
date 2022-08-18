@@ -1,4 +1,4 @@
-@mixin disp-block ($mt:optional, $w:optional)
+@mixin disp-block ($mt:null, $w:null)
         {
         margin-top: $mt;
         max-width: $w;
@@ -8,63 +8,5 @@
         }
 
 
-@mixin mq {
-    @media (min-width: 768px) {
-
-        @content;
-
-        .container {
-          max-width: 1400px;
-        }
-        
-        .centered, .container {
-         @include disp-block;
-        }
-        
-        .row {
-          flex-direction: row;
-        }
-        
-        [class^=col] {
-          display: flex;
-          justify-content: center;
-          margin-top: 0;
-          align-items: center;
-        }
-        
-        [class^=col] + [class^=col] {
-          margin-left: 10px;
-        }
-
-
-        // Will add a loop here for col
-
-
-
-        .nav {
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-          }
-          
-          .nav-link {
-            flex-basis: 100px;
-          }
-          
-          .btn {
-            padding: 10px 30px;
-          }
-          
-          .btn + .btn {
-            margin-left: 10px;
-          }
-          
-          .logo {
-            margin-left: initial;
-            margin-right: initial;
-          }
-          
-}
-}
 
 
