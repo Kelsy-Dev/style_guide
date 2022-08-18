@@ -422,7 +422,7 @@ a {
 
 /*The $col variables aren't working when using @each loop although
  they are well compiled in css line 423 and
-written in _variables line 15  */
+written in _variables line 11  */
 .theme.col-1 {
   background-color: #fd7856;
 }
@@ -502,6 +502,42 @@ written in _variables line 15  */
   }
   [class^=col] + [class^=col] {
     margin-left: 10px;
+  }
+  .col-1 {
+    flex-basis: 8.333333%;
+  }
+  .col-2 {
+    flex-basis: 16.666666%;
+  }
+  .col-3 {
+    flex-basis: 24.999999%;
+  }
+  .col-4 {
+    flex-basis: 33.333332%;
+  }
+  .col-5 {
+    flex-basis: 41.666665%;
+  }
+  .col-6 {
+    flex-basis: 49.999998%;
+  }
+  .col-7 {
+    flex-basis: 58.333331%;
+  }
+  .col-8 {
+    flex-basis: 66.666664%;
+  }
+  .col-9 {
+    flex-basis: 74.999997%;
+  }
+  .col-10 {
+    flex-basis: 83.33333%;
+  }
+  .col-11 {
+    flex-basis: 91.666663%;
+  }
+  .col-12 {
+    flex-basis: 99.999996%;
   }
   .nav {
     flex-direction: row;

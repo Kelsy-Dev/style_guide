@@ -1,16 +1,7 @@
 @import 'utilities/index', 'base/index', 'components/index', 'images/index';
 
-// ---------Function---------------
-
-// @function px-to-pc ($num, $max-width) {
-//     @return ($num / $max-width) * 100;
-// }
-
-// //---------Loops--------------------
-
-// @function per-col ($a, $basis: 8.33%) {
-//     @return  ($basis * 2);
-// }
 
 
-
+@function per-col ($a, $b: 8.33%) {
+    @return ($a * $b)*1%;
+}
