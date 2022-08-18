@@ -2,11 +2,11 @@
 // --------Descriptive Colors-------------------------
 
     $green-turquoise   : #58e1c1; 
-    $blue         : #51ddfc;
-    $light-green  : #63cc82;
-    $red          : #e4757a;
-    $orange       : #fd7856;
-    $violet       : #927bc1;
+    $blue              : #51ddfc;
+    $light-green       : #63cc82;
+    $red               : #e4757a;
+    $orange            : #fd7856;
+    $violet            : #927bc1;
 
     $col-3    : #deb2ee;
     $col-4    : #7ee6fd;
@@ -29,33 +29,25 @@
 // ----------Grid System ----------------
 
     $bckgrnd-colors: (
-      'col-1', 
-      'col-2',
-      'col-3',
-      'col-4',
-      'col-5',
-      'col-6',
-      'col-7',
-      'col-8',
-      'col-12');
+
+      'col-3' : $col-3,
+      'col-4' : $col-4,
+      'col-5' : $col-5,
+      'col-6' : $col-6,
+      'col-7' : $col-7,
+      'col-8' : $col-8,
+      'col-12': $col-12);
 
 
 // -------------Buttons---------------------
 
-$buttns : (
-  'default',
-  'success',
-    'error',
-  'warning',
-    'info'
-);
 
 $thecolors: (
-  '#51ddfc',
-  '#63cc82', 
-  '#e4757a', 
-  '#fd7856', 
-  '#927bc1');
+  'default' : $default-clr,
+  'success' : $sucess-clr,
+  'error'   : $error-clr,
+  'warning' : $warning-clr,
+  'info'    : $info-clr);
 
 
 

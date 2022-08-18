@@ -23,9 +23,6 @@
     [class^=col] + [class^=col] {
       margin-left: 10px;
     }
-
-
-    // Will add a loop here for col
     
     @for $i from 1 through 12 {
       .col-#{$i} {

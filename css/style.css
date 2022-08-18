@@ -356,28 +356,40 @@ a {
   transition-property: background-color;
   transition-duration: 1s;
 }
-.btn:hover {
-  background-color: white;
-}
 
 .default {
   background-color: #51ddfc;
+}
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .success {
   background-color: #63cc82;
 }
+.success:hover {
+  background-color: #9ddfb0;
+}
 
 .error {
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .warning {
   background-color: #fd7856;
 }
+.warning:hover {
+  background-color: #feb4a2;
+}
 
 .info {
   background-color: #927bc1;
+}
+.info:hover {
+  background-color: #bdafd9;
 }
 
 .form {
@@ -418,17 +430,6 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
-}
-
-/*The $col variables aren't working when using @each loop although
- they are well compiled in css line 423 and
-written in _variables line 11  */
-.theme.col-1 {
-  background-color: #fd7856;
-}
-
-.theme.col-2 {
-  background-color: #927bc1;
 }
 
 .theme.col-3 {

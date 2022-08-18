@@ -9,14 +9,16 @@
     transition-property: background-color;
     transition-duration: 1s;
     
-    &:hover {
-      background-color: lighten(white, 5%);
-    }
+    
   }
   
   
-  @each $mybuttons, $mycolors in zip($buttns, $thecolors) {
+  @each $mybuttons, $mycolors in $thecolors {
     .#{$mybuttons} {
-      background-color: #{$mycolors};
-  }
+      background-color: $mycolors;
+    
+      &:hover {
+        background-color: lighten($mycolors, 15%);
+      }
+    }
   }
